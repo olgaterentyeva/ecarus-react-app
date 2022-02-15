@@ -1,8 +1,7 @@
 @import "Colors";
 
-@mixin flex($jc, $ai){
+@mixin flex($ai){
   display: flex;
   flex-wrap: wrap;
-  justify-content: $jc;
   align-items: $ai;
 }
