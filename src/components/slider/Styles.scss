@@ -1,0 +1,131 @@
+@import "../../generalStyles/Mixins";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --heights: 320px;
+  --widths: 100%;
+}
+
+.slider-container {
+  height: var(--heights);
+  width: var(--widths);
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.active {
+  display: inline-block;
+}
+
+.inactive {
+  display: none;
+}
+
+.slides {
+  height: var(--heights);
+  width: var(--widths);
+  position: relative;
+}
+
+.text {
+  max-width: 550px;
+  height: 208px;
+  padding: 8px 56px;
+  position: relative;
+}
+
+.button {
+  margin-top: 200px;
+  position: relative;
+  z-index: 100;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.slide-img {
+  border-radius: 16px;
+  z-index: 100;
+  position: relative;
+  float: right;
+}
+
+.slide-title,
+.slide-description {
+  height: 100%;
+  font-size: 48px;
+  position: absolute;
+  top: 20%;
+  z-index: 10;
+  color: $black;
+  line-height: 24px;
+}
+
+.slide-description {
+  top: 55%;
+  font-size: 16px;
+  color: $gray;
+}
+
+.prev,
+.next {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 100;
+  position: absolute;
+  top: 55%;
+  padding: 1rem;
+  margin-top: -3rem;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  border-radius: 50px;
+  background: white;
+  text-align: center;
+}
+
+//.prev:hover,
+//.next:hover {
+//  color: white;
+//  background-color: rgba(0, 0, 0, 0.6);
+//  transition: all 0.5s ease-in;
+//}
+
+.next {
+  right: 0;
+}
+
+.all-dots {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  top: 85%;
+  justify-content: center;
+  z-index: 200;
+}
+
+.dot {
+  cursor: pointer;
+  height: 0.6rem;
+  width: 0.6rem;
+  margin: 0 3px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active-dot,
+.dot:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}

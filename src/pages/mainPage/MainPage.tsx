@@ -1,10 +1,12 @@
 import React from "react";
 import {BaseLayout} from "../../components/baseLyout/BaseLayout";
-import sliderRecycle from "../../images/slider-recycle.svg";
 import map from "../../images/icons/map.svg";
 import arrow from "../../images/arrow.svg";
-import market from "../../images/market.svg";
+import market from "../../images/slider/market.svg";
 import './MainPage.scss';
+import { Slider } from "../../components/slider/Slider";
+
+
 
 export const MainPage = () => {
     return (
@@ -12,13 +14,7 @@ export const MainPage = () => {
             <main className="main">
                 <div className="container">
                     <div className="slider">
-                        <img src={sliderRecycle} className="slider__img" alt=""/>
-                        <div className="slider__text">
-                            <h1>Сделаем мир чище</h1>
-                            <p>Сдай макулатуру или старую одежду и получи скидку <br/>на покупку товаров из
-                                переработанных материалов</p>
-                            <button>Условия сервиса</button>
-                        </div>
+                        <Slider/>
                     </div>
 
                     <span className="inform">
