@@ -29,13 +29,13 @@
     transition: 0.3s;
     padding: 27px 0;
     border-bottom: 3px solid transparent;
-    &:hover {
+  }
+  &__active {
       color: black;
       border-bottom: 3px solid $bright-green;
-    }
   }
   &__img {
-    color: rgba(0, 11, 38, 0.8);
+    color: $gray;
     text-decoration: none;
     img {
       margin-right: 8px;
@@ -43,10 +43,24 @@
     }
     //это надо как нить исправить (в идеале с :last-child)
     .geo {
-      margin-left: 455px;
+      margin-left: 400px;
     }
   }
 }
 
-
+.footer {
+  width: 100vw;
+  height: 60px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  float: bottom;
+  color: $light-gray;
+  padding-top: 20px;
+  @include flex(center);
+  img {
+    margin-right: 8px;
+  }
+  span:last-child {
+    margin-left: 30px;
+  }
+}
 

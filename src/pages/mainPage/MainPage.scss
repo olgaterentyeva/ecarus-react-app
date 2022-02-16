@@ -1,0 +1,80 @@
+@import "../../generalStyles/Mixins";
+
+.main {
+  max-height: 880px;
+  margin-bottom: 120px;
+}
+
+.slider {
+  background: $light-green;
+  border-radius: 16px;
+  height: 320px;
+  margin-top: 40px;
+  &__img {
+    border-radius: 50px;
+    float: right;
+  }
+  &__text {
+    padding: 8px 56px;
+    max-width: 550px;
+    height: 208px;
+  }
+  h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: $black;
+  }
+  p {
+    color: $gray;
+    font-size: 16px;
+  }
+  button {
+    max-width: 384px;
+    width: 180px;
+    height: 55px;
+    background: $bright-green;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}
+
+.inform {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.inform-block {
+  width: 595px;
+  height: 300px;
+  border-radius: 16px;
+  border: 2px solid rgba(18, 34, 88, 0.12);
+  margin-top: 48px;
+  &__img {
+    float: right;
+  }
+  &__text {
+    max-width: 280px;
+    height: 510px;
+    padding: 8px 40px;
+  }
+  h3 {
+    font-size: 32px;
+    color: $black;
+  }
+  p {
+    font-size: 16px;
+    color: rgba(0, 11, 38, 0.56);
+  }
+  button {
+    width: 48px;
+    height: 48px;
+    background: rgba(62, 80, 114, 0.08);
+    border-radius: 8px;
+    border: none;
+    margin-top: 30px;
+  }
+}
